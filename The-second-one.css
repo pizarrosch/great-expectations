@@ -1,0 +1,158 @@
+#title {
+    color: darkred;
+    font-size: 40px;
+    font-family: "Papyrus", sans-serif;
+}
+
+#subtitle {
+    font-size: 28px;
+    font-family: Papyrus, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtitle > span {
+    margin: 0 20px;
+}
+
+article {
+    text-align: center;
+}
+
+#box {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: cornsilk;
+    box-shadow: grey;
+    padding: 30px;
+}
+section {
+    text-align: justify;
+    font-family: "Bahnschrift", sans-serif;
+}
+
+img {
+    width: 25px;
+    height: 35px;
+}
+
+#lys-flower-symbol {
+    transform: rotate(-90deg)
+}
+
+#lys-flower-symbol-2 {
+    transform: rotate(90deg)
+}
+
+#lys-flower-symbol,
+#lys-flower-symbol-2 {
+    filter: opacity(0.5);
+}
+
+h3  {
+    color: #F05332;
+    font-family: "Bahnschrift", sans-serif;
+}
+.container-2 {
+    margin: 10px auto;
+    padding: 26px 30px;
+    max-width: 900px;
+    font-family: "Bahnschrift", system-ui, sans-serif;
+    border-left: #f0533a 4px solid;
+    border-right: #f0533a 4px solid;
+    background-color: rgb(247, 247, 247);
+    line-height: 26px;
+}
+
+.subcontainer {
+    margin: 0 0 0 40px;
+    font-size: 18px;
+}
+
+.subcontainer > h3 {
+    text-transform: uppercase;
+}
+
+.plain-text {
+    padding-bottom: 10px;
+}
+
+li {
+    line-height: 26px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+li:first-letter {
+    color: #231F20;
+    font-weight: bold;
+}
+
+li::marker {
+  color: #ec1c82;
+}
+
+#Menu a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: "Papyrus", sans-serif;
+    font-weight: bold;
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 10px;
+    transition: color 300ms, background-color 300ms;
+    border: darkred solid 2px;
+}
+
+#Menu a:hover {
+    background-color: white;
+    color: darkred;
+    border: darkred solid 2px;
+}
+
+.links {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+#button-name {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px 12px 30px;
+    font-family: "Papyrus", sans-serif;
+    font-weight: bold;
+    background-color: darkred;
+    color: white;
+    display: inline;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 18px 0 0 10px;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkred;
+    width: 100%;
+    text-align: center;
+}
+
+#dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}

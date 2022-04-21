@@ -1,0 +1,327 @@
+body {
+  background-color: lightgrey;
+  display: flex;
+}
+
+#quote {
+  font-size: 20px;
+  transition: color 300ms ease-in-out;
+  text-align: justify;
+  color: #8a8a8a
+}
+
+#quote:hover {
+  color: red;
+}
+
+.theme-button {
+  padding: 5px 10px;
+  border-radius: 7px;
+  border-color: lightblue;
+  background-color: azure;
+  font-family: Arial, sans-serif;
+}
+
+.light {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.35);
+  color: black;
+}
+
+.dark {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+#quote-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#quote {
+  display: block;
+  width: 300px;
+}
+
+#quote > p {
+  text-align: right;
+}
+
+
+.caption {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+#flag-of-britain {
+  margin-left: 0;
+  width: 236px;
+}
+
+.tooltip-button {
+  position: relative;
+  background-color: silver;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 50px;
+  padding: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tooltip {
+  display: none;
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 50px;
+  height: 22px;
+  /*position: absolute;*/
+}
+
+.tooltip-popup {
+  display: inline-block;
+  border: solid 2px deepskyblue;
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 150px;
+  height: auto;
+  min-height: 25px;
+  position: absolute;
+  right: -59px;
+  bottom: 24px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu-container {
+  position: relative;
+  display: grid;
+  align-content: flex-start;
+  width: 180px;
+}
+
+.menu-button {
+  width: 45px;
+  height: 35px;
+  border: 1px solid deepskyblue;
+  border-radius: 7px;
+  /*position: absolute;*/
+  /*top: 177px;*/
+  /*left: -1px;*/
+  font-family: Arial, sans-serif;
+}
+
+.menu-image {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-box {
+  width: 180px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  align-items: flex-start;
+  left: -250px;
+  position: absolute;
+}
+
+.open-menu {
+  left: 0;
+}
+
+.menu-box span {
+  border: solid 1px deepskyblue;
+  border-radius: 7px;
+  padding: 15px;
+  width: 100px;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.menu-box span:hover {
+  padding-left: 66px;
+  border: solid 2px deepskyblue;
+  background-color: lightblue;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+.chapter-style {
+  color: grey;
+  font-weight: inherit;
+  text-align: center;
+}
+
+#story {
+  text-align: justify;
+  font-family: Arial, sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-family: Algerian, serif;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center
+}
+
+
+#introduction:first-letter {
+  font-size: 83.5px;
+  font-family: "Imprint MT Shadow", sans-serif;
+  float: left;
+  line-height: 0.6;
+  margin: 10px 10px 9px 0;
+}
+
+ul {
+  list-style-image: url("images/1920px-Flag_of_Wales_(1959–present).jpg");
+}
+
+figure {
+  float: left;
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.likes-number {
+  font-size: 23px;
+  line-height: 20px;
+}
+
+.comment-feed {
+  margin: 0 0 12px 0;
+  font: inherit;
+}
+
+
+/*.triangle {*/
+/*    display: block;*/
+/*    background-color: aliceblue;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-right: 50px solid transparent;*/
+/*    border-left: 50px solid transparent;*/
+/*    border-bottom: 50px solid lightskyblue;*/
+/*   */
+/*}*/
+
+.comment-container {
+  margin-bottom: 30px;
+}
+
+.comments-title {
+  font-size: 22px;
+  margin-right: 900px;
+  margin-top: 50px;
+}
+
+.all-comments {
+  list-style: none;
+  padding-inline-start: 10px;
+  margin-block-start: 10px;
+}
+
+.comment-number {
+  color: lightgray;
+}
+
+.personal-comment {
+  padding: 10px;
+  display: block;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid lightskyblue;
+  margin-bottom: 5px;
+}
+
+.all-comments .personal-comment {
+  display: flex;
+  position: relative;
+}
+
+
+.comment-form {
+  display: flex;
+}
+
+.comment-content {
+  position: relative;
+  flex-grow: 1;
+}
+
+.comment-label {
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  padding: 5px;
+  line-height: 15px;
+  font-size: 10px;
+  color: gray;
+}
+
+.comment-field {
+  width: 95%;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  height: 30px;
+}
+
+.submit-button {
+  width: 15%;
+  color: white;
+  background-color: royalblue;
+  font: inherit;
+  border-radius: 7px;
+}
+
+/*.subscription-message {*/
+/*    color: white;*/
+/*    background: blueviolet;*/
+/*    border: 1px;*/
+/*    border-radius: 5px;*/
+/*    padding: 5px;*/
+/*}*/
+
+
+/*.nextMessage {*/
+/*    color: darkblue;*/
+/*    border-radius: 5px;*/
+/*    background-color: lightsteelblue;*/
+/*    padding: 7px 15px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+.liked > div {
+  background: red;
+}
+
+
+
