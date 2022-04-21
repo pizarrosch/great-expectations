@@ -32,7 +32,7 @@ let message = $('.subscription-message')
 let email = $('.subscription-email')
 let form = $('.submission');
 
-form.onsubmit = function (evt) {
+form.onsubmit = (evt) => {
   evt.preventDefault();
   message.textContent = email.value + ' has been registered on our website';
 }
