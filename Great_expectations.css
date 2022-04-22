@@ -97,10 +97,15 @@ body {
   height: auto;
   min-height: 25px;
   position: absolute;
-  right: -59px;
-  bottom: 24px;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
   font-size: 12px;
   text-align: center;
+}
+
+.dark .tooltip-popup {
+  background: darkblue;
 }
 
 .menu-container {
@@ -209,6 +214,9 @@ figure {
   user-select: none;
 }
 
+.dark .heart {
+  fill: white;
+}
 
 .likes-number {
   font-size: 23px;
@@ -259,6 +267,10 @@ figure {
   border-radius: 5px;
   border: 1px solid lightskyblue;
   margin-bottom: 5px;
+}
+
+.dark .personal-comment {
+  color: black;
 }
 
 .all-comments .personal-comment {

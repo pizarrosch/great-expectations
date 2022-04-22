@@ -1,16 +1,19 @@
-function $(selector) {
-  return document.querySelector(selector);
+function $(selector, many=false) {
+  if(many) {
+    return document.querySelectorAll(selector)
+  }
+    return document.querySelector(selector);
 }
 
 function create(name) {
   return document.createElement(name);
 }
 
-const element = $(".container");
+const container = $(".container");
 const button = $(".theme-button");
 
 button.onclick =  () => {
-  element.classList.toggle("dark");
+  container.classList.toggle("dark");
 }
 
 const menuButton = $('.menu-button');
@@ -20,12 +23,14 @@ menuButton.onclick = () => {
   menuBox.classList.toggle('open-menu');
 }
 
-const tooltipButton = $('.tooltip-button');
-const tooltip = $('.tooltip');
+const tooltipButtons = $('.tooltip-button', true);
 
-tooltipButton.onclick = () => {
-  tooltip.classList.toggle('tooltip-popup');
-  tooltip.textContent = tooltip.dataset.tooltipText;
+for (const button of tooltipButtons) {
+  button.onclick = () => {
+    const tooltip = button.querySelector('.tooltip');
+    tooltip.classList.toggle('tooltip-popup');
+    tooltip.textContent = tooltip.dataset.tooltipText;
+  }
 }
 
 const message = $('.subscription-message')
