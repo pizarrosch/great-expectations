@@ -1,3 +1,4 @@
+// The great function o Zaur
 function $(selector, many=false) {
   if(many) {
     return document.querySelectorAll(selector)
