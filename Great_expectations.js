@@ -26,13 +26,13 @@ menuButton.onclick = () => {
 
 const tooltipButtons = $('.tooltip-button', true);
 
-for (const button of tooltipButtons) {
-  button.onclick = () => {
-    const tooltip = button.querySelector('.tooltip');
-    tooltip.classList.toggle('tooltip-popup');
-    tooltip.textContent = tooltip.dataset.tooltipText;
-  }
-}
+// for (const button of tooltipButtons) {
+//   button.onclick = () => {
+//     const tooltip = button.querySelector('.tooltip');
+//     tooltip.classList.toggle('tooltip-popup');
+//     tooltip.textContent = tooltip.dataset.tooltipText;
+//   }
+// }
 
 const message = $('.subscription-message')
 const email = $('.subscription-email')
