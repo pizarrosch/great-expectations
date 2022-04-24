@@ -101,7 +101,7 @@ body {
 
 }
 
-.dark .tooltip-popup {
+.dark .tooltip {
   background: darkblue;
 }
 
@@ -264,6 +264,7 @@ figure {
   border-radius: 5px;
   border: 1px solid lightskyblue;
   margin-bottom: 5px;
+  max-width: 900px;
 }
 
 .dark .personal-comment {
@@ -303,6 +304,10 @@ figure {
   height: 30px;
 }
 
+.symbols-number {
+  font-size: 11px;
+}
+
 .submit-button {
   width: 15%;
   color: white;
@@ -310,6 +315,20 @@ figure {
   font: inherit;
   border-radius: 7px;
 }
+
+.warning {
+  color: red;
+}
+
+.comment-form.warning .comment-field {
+  color:red;
+}
+
+.submit-button:disabled {
+  background-color: lightgray;
+  color: darkgray;
+}
+
 
 /*.subscription-message {*/
 /*    color: white;*/

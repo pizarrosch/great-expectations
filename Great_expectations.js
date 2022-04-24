@@ -109,3 +109,19 @@ comment.onsubmit = (evt) => {
   // Clear the input field
   input.value = '';
 };
+
+const commentField = $('.comment-field');
+let output = $('.output');
+const submitButton = $('.submit-button');
+
+commentField.oninput = () => {
+  output.textContent = commentField.value.length;
+
+  if (commentField.value.length > 10) {
+    comment.classList.add('warning');
+    submitButton.disabled = true;
+  } else {
+    comment.classList.remove('warning');
+    submitButton.disabled = false;
+  }
+}
