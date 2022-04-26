@@ -1,6 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: lightgrey;
   display: flex;
+}
+
+.body-dark {
+  background-color: dimgray;
 }
 
 #quote {
@@ -30,6 +38,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.35);
   color: black;
+}
+
+.dark .theme-button {
+  background-color: cornflowerblue;
 }
 
 .dark {
@@ -122,6 +134,7 @@ body {
   /*left: -1px;*/
   font-family: Arial, sans-serif;
 }
+
 
 .menu-image {
   width: 30px;
@@ -264,7 +277,7 @@ figure {
   border-radius: 5px;
   border: 1px solid lightskyblue;
   margin-bottom: 5px;
-  max-width: 900px;
+  word-wrap: break-word;
 }
 
 .dark .personal-comment {
@@ -275,7 +288,6 @@ figure {
   display: flex;
   position: relative;
 }
-
 
 .comment-form {
   display: flex;
@@ -296,6 +308,7 @@ figure {
   color: gray;
 }
 
+
 .comment-field {
   width: 95%;
   line-height: 30px;
@@ -310,6 +323,7 @@ figure {
 
 .submit-button {
   width: 15%;
+  height: 35px;
   color: white;
   background-color: royalblue;
   font: inherit;
@@ -349,6 +363,26 @@ figure {
 
 .liked > div {
   background: red;
+}
+
+.up-button {
+  display: none;
+}
+
+.up-button:hover {
+  border-color: lightsteelblue;
+}
+
+.shown {
+  display: inline-block;
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  border: 5px solid cornflowerblue;
+  border-radius: 50%;
+  bottom: 60px;
+  right: 20px;
+  cursor: pointer;
 }
 
 

@@ -10,11 +10,13 @@ function create(name) {
   return document.createElement(name);
 }
 
+const Body = $('body');
 const container = $(".container");
 const button = $(".theme-button");
 
 button.onclick =  () => {
   container.classList.toggle("dark");
+  Body.classList.toggle('body-dark');
 }
 
 const menuButton = $('.menu-button');
@@ -111,17 +113,35 @@ comment.onsubmit = (evt) => {
 };
 
 const commentField = $('.comment-field');
-let output = $('.output');
+const output = $('output');
 const submitButton = $('.submit-button');
 
 commentField.oninput = () => {
   output.textContent = commentField.value.length;
 
-  if (commentField.value.length > 10) {
+  if (commentField.value.length > 200) {
     comment.classList.add('warning');
     submitButton.disabled = true;
   } else {
     comment.classList.remove('warning');
     submitButton.disabled = false;
   }
+}
+
+submitButton.onclick = () => {
+  output.textContent = 0;
+}
+
+const upButton = $('.up-button');
+
+window.onscroll = () => {
+  if (window.scrollY > 300) {
+    upButton.classList.add('shown');
+} else {
+  upButton.classList.remove('shown');
+}
+}
+
+upButton.onclick = () => {
+  window.scrollTo(0,0);
 }
