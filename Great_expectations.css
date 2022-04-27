@@ -28,6 +28,7 @@ body {
   border-color: lightblue;
   background-color: azure;
   font-family: Arial, sans-serif;
+  cursor: pointer;
 }
 
 .light {
